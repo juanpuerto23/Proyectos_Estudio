@@ -9,6 +9,14 @@ public class Libro
     private String titulo;
 
     //Constructores
+    public Libro()
+    {
+        ISBN = 0;
+        numPaginas = 0;
+        autor = "";
+        titulo = "";
+    }
+
     public Libro(int pISBN, int pnumPaginas, String pAutor, String pTitulo)
     {
         //Se pone una p antes del nombre para que el programa diferencie los atributos de las variables, sino entonces se pone this.<name>=<name>
@@ -59,15 +67,14 @@ public class Libro
         this.titulo = titulo;
     }
 
+    public static Libro[] crearListaLibros(int numeroLibros)
+    {
+        return new Libro[numeroLibros];
+    }
+
     //Para adentro de la clase se usa el nombre del atributo normal, mientras que para afuera se usa el get mas el nombre del atributo
-
-
     public String toString()
     {
         return  ("El libro " + titulo + " con ISBN " + ISBN + " creado por el autor " + autor + " tiene "+ numPaginas +" páginas");
     }
-
-
-    
-
 }
