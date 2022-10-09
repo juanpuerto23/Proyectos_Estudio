@@ -20,7 +20,9 @@ Por último, indicar cuál de los 2 tiene más páginas.
 
 # Captura de Pantalla
 
+## Captura 1
 
+![Captura](imagenes/Captura1.png)
 
 # Funcionamiento Basico
 
